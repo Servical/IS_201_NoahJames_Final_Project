@@ -1,0 +1,73 @@
+/* General body and text styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #333333; /* Dark gray background */
+    color: #dddcdc; /* Light gray text */
+}
+
+header {
+    background-color: #2b2b2b; /* Very dark gray */
+    padding: 15px;
+    text-align: center;
+    color: #c9b79c; /* Light brown text */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #c9b79c;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #a67c00; /* Subtle brown underline */
+    color: #a67c00;
+}
+
+main {
+    background-color: #44403c; /* Medium dark brown-gray */
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+main h2 {
+    color: #c9b79c;
+}
+
+.intro img {
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #a67c00;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* ===================
+   PP1 - About Me Styles
+   =================== */
+
+.pp1 header {
+    background-color: #2b2b2b;
+}
+
+.pp1 main {
+    box-shadow: 0 0 12px #a67c00;
+}
+
+/* Additional page-specific styles for pp2 - pp6 to follow, separated by comments */
+
