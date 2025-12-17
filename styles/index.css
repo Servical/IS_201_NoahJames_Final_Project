@@ -1,0 +1,333 @@
+.header{
+  font-family: inherit;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(13, 193, 154, 0.85);  /* same color, slightly transparent */
+  text-shadow: 0 0 8px rgba(13, 193, 154, 0.4); /* soft glow, optional */
+}
+
+
+.class-1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(245, 244, 247);
+    border-color: rgb(245, 244, 247);
+    margin: 10px auto;
+    background-color: rgb(0, 0, 0);
+    color: rgb(23, 206, 62);
+    width: 600px;
+}
+
+  .class-1  h2{font-size: 20px;
+      font-style:italic;}
+
+.characters-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+  /* shared box styling */
+  .good-guys, .bad-guys {
+    flex: 1;
+    max-width: 300px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+    /* headings inside boxes */
+    .good-guys h2,
+    .bad-guys h2 {
+      font-style: italic;
+      font-size: 20px;
+      text-decoration: underline;
+      margin-top: 0;
+    }
+
+    /* per‑box colors + alignment */
+    .good-guys {
+      text-align: left;
+      background-color: rgb(0, 0, 0);
+      color: rgb(0, 255, 255); 
+    }
+      .good-guys ul {
+        list-style-type: square;
+        padding-right: 300px;
+        width: 50px;
+        font-size: 18px;
+      }
+
+        .good-guys ul li {
+        white-space: nowrap;
+        font-size: 20px;
+        }
+
+    .bad-guys {
+      text-align: left;
+      background-color: rgb(170, 4, 4);
+      color: rgb(245, 241, 241);
+    }
+
+      .bad-guys ul {
+        list-style-type: square;
+        padding-right: 300px;
+        width: 50px;
+        font-size: 18px;
+      }
+
+        .bad-guys ul li {
+        white-space: nowrap;
+        font-size: 20px;
+        }
+
+
+body {
+  background-image: url("https://wallpapercat.com/w/full/3/a/a/728255-1920x1111-desktop-hd-halo-ring-background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+
+.horizontally-stacked-images{
+    display: flex;              /* this is what horizontally stacks the images */
+    justify-content: center;  /* centers the images in the container */
+    gap: 30px;
+    padding: 20px;
+} 
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;      /* caps size on desktop */
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  margin: 20px auto;     /* centers it */
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wiki {
+  text-align: center;
+  margin-left:  500px;
+  margin-right: 500px;
+  max-width: 200px;
+  border: 2 px solid black;
+  padding: 10px;
+  background-color: rgb(6, 5, 5);
+  color: rgb(44, 229, 239);
+  border-radius: 20px;
+}
+
+.youtube {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+  .highlight {
+    color: cyan;  /* matches your good-guys */
+    font-weight: bold;
+  }
+
+  .inline-channels {
+    list-style: none;
+    padding: 0;
+    display: flex;      /* inline layout */
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+    .inline-channels li {
+      background: rgba(0,0,0,0.7);
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid cyan;
+      transition: 0.3s ease;  /* smooth hover effect change */
+    }
+
+    .inline-channels a {
+      color: cyan;
+      text-decoration: none;
+    }
+
+    /*New; hover the whole LI box*/
+    .inline-channels li:hover {
+      background: cyan;  /*fills entier badge cyan */
+    }
+
+    .inline-channels li:hover a {
+      color: black;  /* text turns black on hover */
+    }
+
+    .weapons-table {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      border: 2px solid rgb(242, 240, 240);
+      background-color: rgb(102, 43, 231);
+      color: rgb(248, 242, 242);
+    }
+
+      .weapons-table th,
+      .weapons-table td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .weapons-table th {
+        background-color: rgb(0, 0, 0);
+        color: cyan;
+    }
+
+      /* Layer 1: Base box (behind everything) */
+  .base-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.8);
+    padding: 100px;
+    border-radius: 10px;
+  }
+
+.triangle-wrapper {
+  position: relative;
+  width: 625px;      /* adjust size */
+  height: 275px;
+  margin: 40px auto;
+}
+
+/* Triangle in the middle layer */
+.golden-triangle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 180px solid gold;
+  z-index:  2;
+}
+
+
+/* Base icon style */
+.vertex-icon {
+  position: absolute;
+  width: 200px;       /* icon size */
+  height: 100px;
+  z-index: 3;        /* above triangle */
+}
+
+/* Top vertex: melee fist */
+.melee-icon {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+/* Bottom-left vertex: assault rifle */
+.rifle-icon {
+  bottom: -20px;
+  left: 5px;
+}
+
+/* Bottom-right vertex: grenade */
+.grenade-icon {
+  bottom: -20px;
+  right: 5px;
+}
+
+.end-links{
+  text-align: right;
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 3px #111827,     /* near-black inner ring */
+    0 0 0 7px #1f2937,     /* dark slate */
+    0 0 0 11px #06b6d4;    /* cyan accent */
+  padding: 20px;
+  margin: 50px;
+  background-color: #020617;  /* very dark navy */
+  width: 220px;
+  color: #f9fafb;             /* text color fallback */
+}
+
+.end-links a{
+  text-decoration: underline;
+  color: #22d3ee;             /* bright cyan link */
+  font-weight: 600;
+}
+
+
+
+.end-links a{
+  text-decoration: underline;
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+.speech-box{
+ text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.base-box h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gameplay-loop{
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 255);
+  width: 200px auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.gameplay-loop h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.gameplay-loop span{
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tableau-viz h2{
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(21, 67, 142);
+  color: rgb(109, 168, 168);
+  margin: 0px;
+}

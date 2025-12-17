@@ -1,0 +1,176 @@
+/* Base page styling */
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #e0e0e0 0, #cccccc 55%, #b3b3b3 100%);
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and nav */
+.edu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px 14px;
+    border-bottom: 2px solid #b5b5b5;
+    margin-bottom: 26px;
+}
+
+.edu-brand {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.edu-nav a {
+    margin-left: 14px;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.edu-nav a.current-page {
+    font-weight: 700;
+    border-bottom: 2px solid #c9a96b;
+}
+
+/* Layout wrapper */
+.edu-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+}
+
+/* Cards for each institution */
+.edu-card {
+    margin-bottom: 32px;
+    padding: 22px 24px;
+    border-radius: 18px;
+    background: #f5f5f7;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Extra space before BYU */
+.edu-card.byu {
+    margin-top: 16px;
+}
+
+.edu-card h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2b2b2b;
+}
+
+/* Subtle color accents per school */
+.rhhs h2 {
+    color: #b58a3a;
+}
+
+.svu h2 {
+    color: #356ea9;
+}
+
+.byu h2 {
+    color: #23447d;
+}
+
+.tagline {
+    margin: 0 0 10px;
+    font-style: italic;
+    color: #666;
+    opacity: 0.95;
+}
+
+/* Text and lists */
+.edu-card p {
+    line-height: 1.6;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.edu-card ul {
+    margin: 6px 0 0 20px;
+    color: #222;
+}
+
+/* Grid for logo + text */
+.edu-grid {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
+}
+
+/* Logo box */
+.edu-logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Logos when added */
+.edu-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Ensure text inside edu-text aligns cleanly */
+.edu-text h2,
+.edu-text p,
+.edu-text ul,
+.edu-text h3 {
+    margin-left: 0;
+}
+
+/* Columns for SVU section */
+.edu-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.edu-columns h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* Footer */
+.edu-footer {
+    text-align: center;
+    padding-top: 14px;
+    margin-top: 24px;
+    border-top: 1px solid #b5b5b5;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
+}

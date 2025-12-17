@@ -1,0 +1,135 @@
+/* Global page styling */
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: "Georgia", serif;
+    background: radial-gradient(circle at top, #3a2020 0, #151010 55%, #080707 100%);
+    color: #f4e8e8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.love-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px 14px;
+    border-bottom: 2px solid #5b3030;
+    margin-bottom: 24px;
+}
+
+.love-brand {
+    font-size: 2.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #f2d2d2;
+}
+
+.love-nav a {
+    margin-left: 14px;
+    text-decoration: none;
+    color: #f0c2c2;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.love-nav a.current-page {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+/* Main layout container */
+.love-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+}
+
+/* Hero: image + intro */
+.love-hero {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 2fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+/* Picture of Claire */
+.love-photo {
+    height: 280px;
+    border-radius: 18px;
+    background-image: url("../images/Claire_Image_For_Final.JPEG"); /* or your hosted URL */
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Intro card */
+.love-intro {
+    background: linear-gradient(135deg, #3b2224, #241516);
+    border-radius: 18px;
+    padding: 22px 26px;
+    box-shadow: 0 0 18px rgba(120, 56, 56, 0.9);
+}
+
+.love-intro h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #f6d5d5;
+}
+
+.love-intro p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Columns section */
+.love-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Individual column cards */
+.love-col {
+    background-color: #271416;
+    border-radius: 16px;
+    padding: 18px 20px;
+    border: 1px solid #5a3033;
+    box-shadow: 0 0 12px rgba(80, 40, 40, 0.9);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.love-col h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #f1c1c1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.love-col p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.love-col:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(100, 45, 45, 1);
+}
+
+/* Footer */
+.love-footer {
+    text-align: center;
+    padding-top: 14px;
+    margin-top: 26px;
+    border-top: 1px solid #5b3030;
+    font-size: 0.9rem;
+    color: #d9baba;
+}
